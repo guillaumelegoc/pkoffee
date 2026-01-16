@@ -1,0 +1,96 @@
+[[Models]]
+name = "Logistic"
+function = "Logistic"
+r_squared = 0.30506545305252075
+
+[Models.params]
+L = -1.7370988896648394
+k = 1.0292683015390605
+x0 = 6.863569840768443
+y0 = 1.8991209782201857
+
+[Models.bounds.min]
+L = -inf
+k = 0.0
+x0 = -inf
+y0 = -inf
+
+[Models.bounds.max]
+L = inf
+k = inf
+x0 = inf
+y0 = inf
+
+[[Models]]
+name = "Quadratic"
+function = "Quadratic"
+r_squared = 0.28151410818099976
+
+[Models.params]
+a0 = 1.9370229038756952
+a1 = -0.023944678968436967
+a2 = -0.012948736076605814
+
+[Models.bounds.min]
+a0 = -inf
+a1 = -inf
+a2 = -inf
+
+[Models.bounds.max]
+a0 = inf
+a1 = inf
+a2 = inf
+
+[[Models]]
+name = "Michaelis-Menten"
+function = "MichaelisMentenSaturation"
+r_squared = 0.26624566316604614
+
+[Models.params]
+v_max = -4416997.485818204
+k = 24618764.810450513
+y0 = 2.2225137877123764
+
+[Models.bounds.min]
+v_max = -inf
+k = 0.0
+y0 = -inf
+
+[Models.bounds.max]
+v_max = inf
+k = inf
+y0 = inf
+
+[[Models]]
+name = "Peak"
+function = "PeakModel"
+r_squared = 0.1724284291267395
+
+[Models.params]
+a = 2.4799235660525616
+b = 2.387265343410367
+
+[Models.bounds.min]
+a = -inf
+b = 0.0
+
+[Models.bounds.max]
+a = inf
+b = inf
+
+[[Models]]
+name = "Peak²"
+function = "Peak2Model"
+r_squared = 0.15114957094192505
+
+[Models.params]
+a = 2.019305755117635
+b = 1.460978057896904
+
+[Models.bounds.min]
+a = -inf
+b = 0.0
+
+[Models.bounds.max]
+a = inf
+b = inf

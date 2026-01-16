@@ -30,3 +30,6 @@ classifiers = [
 
 [project.scripts]
 pkoffee = "pkoffee.cli:main"
+
+[tool.coverage.run]
+source = ["src"]
