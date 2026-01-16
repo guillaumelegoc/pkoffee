@@ -88,7 +88,7 @@ def curate(data: pd.DataFrame) -> pd.DataFrame:
     # Remove any rows with NaN values
     initial_size = len(data)
     curated_data = data.dropna(subset=list(RequiredColumn)).reset_index(drop=True)
-    if len(data) < initial_size:
+    if len(curated_data) < initial_size:
         logger = logging.getLogger(__name__)
         logger.warning("Dropped %s rows due to NaN values", initial_size - len(data))
     return curated_data
