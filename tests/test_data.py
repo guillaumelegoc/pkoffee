@@ -70,3 +70,16 @@ def test_load_csv_not_csv():
 
     with pytest.raises(CSVReadError):
         load_csv(Path(__file__))
+
+
+def test_extract_arrays():
+    from pkoffee.data import extract_arrays
+
+    df = pd.DataFrame({"cups": [1, 2, 3], "productivity": [10, 20, 31.0]})
+    cups_expected = np.array([1, 2, 3], dtype=np.float32)
+    productivity_expetected = np.array([10, 20, 31.0], dtype=np.float32)
+
+    cups_res, productivity_res = extract_arrays(df)
+
+    np.testing.assert_allclose(cups_res, cups_expected)
+    np.testing.assert_allclose(productivity_res, productivity_expetected)
