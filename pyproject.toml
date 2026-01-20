@@ -22,6 +22,15 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
 ]
+dependencies = [
+    "bidict>=0.23.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.1",
+    "pandas>=2.3.3",
+    "scipy>=1.17.0",
+    "seaborn>=0.13.2",
+    "tomlkit>=0.14.0",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/s3-school/pkoffee"
